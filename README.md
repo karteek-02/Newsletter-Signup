@@ -15,14 +15,15 @@ Newsletter signup project using Mailchimp API. Users can sign up with name and e
 
 # Installation :
 
+```
 git clone https://github.com/your-username/newsletter-signup.git 
-
+```
+```
 cd Newsletter
-
-npm i 
-
+```
+```
+npm i
+```
+```
 nodemon server.js
-
-
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+```
