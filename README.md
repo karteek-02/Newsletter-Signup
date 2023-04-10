@@ -13,4 +13,9 @@ Newsletter signup project using Mailchimp API. Users can sign up with name and e
 <li>User-friendly signup form for easy subscription</li>
 </ul>
 
+# Installation :
+
+git clone https://github.com/your-username/newsletter-signup.git
+
+
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->

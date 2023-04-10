@@ -8,9 +8,9 @@ const express = require("express");
  
  app.use(express.static("Public"));
 
- app.use(bodyparser.urlencoded({extended: true}));             // Mailchimp API-key -2755c02dbff6d51631b234f225051b40-us8
+ app.use(bodyparser.urlencoded({extended: true}));             
 
- app.get("/", function(req,res){                              //  Mailchimp List ID - 141b6cf92e
+ app.get("/", function(req,res){                              
     res.sendFile(__dirname + "./Public/index.html");
 
  });
@@ -41,11 +41,11 @@ const express = require("express");
 
   const options = {
 
-    url : 'https://us8.api.mailchimp.com/3.0/lists/141b6cf92e', 
+    url : `${process.env.MAILCHIMP_API_URL}`, 
     method: 'POST',
     headers: {
 
-        Authorization: 'auth 2755c02dbff6d51631b234f225051b40-us8'
+      Authorization: `auth ${process.env.API_KEY}`
     },
     body: postData
   }
