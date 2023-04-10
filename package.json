@@ -1,0 +1,18 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "Newsletter App using Mailchimp ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "author": "Karteek",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19",
+    "request": "^2.88.2"
+  }
+}
